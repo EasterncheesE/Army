@@ -9,7 +9,7 @@
 
 class Priest : public Spellcaster {
 public:
-    Priest(std::string title, int hp, int dmg, int mp);
+    Priest(std::string title = "priest", int hp = int(SetupHP::PRIEST), int dmg = int(SetupDMG::PRIEST), int mp = int(SetupMP::PRIEST));
     ~Priest();
     
     void attack(Unit* target);

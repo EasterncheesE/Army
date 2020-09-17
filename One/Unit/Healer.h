@@ -9,7 +9,7 @@
 
 class Healer : public Spellcaster {
 public:
-    Healer(std::string title, int hp, int dmg, int mp);
+    Healer(std::string title = "healer", int hp = int(SetupHP::HEALER), int dmg = int(SetupDMG::HEALER), int mp = int(SetupMP::HEALER));
     ~Healer();
 };
 

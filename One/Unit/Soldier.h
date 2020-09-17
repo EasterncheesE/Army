@@ -7,7 +7,7 @@
 
 class Soldier : public Unit {
 public:
-        Soldier(std::string title, int hp, int dmg);
+        Soldier(std::string title = "soldier", int hp = int(SetupHP::SOLDIER), int dmg = int(SetupDMG::SOLDIER));
         ~Soldier();
         
         void attack(Unit* target);

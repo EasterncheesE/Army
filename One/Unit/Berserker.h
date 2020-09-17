@@ -8,7 +8,7 @@
 
 class Berserker : public Unit {
 public:
-        Berserker(std::string title, int hp, int dmg);
+        Berserker(std::string title = "berserker", int hp = int(SetupHP::BERSERKER), int dmg = int(SetupDMG::BERSERKER));
         ~Berserker();
         
         

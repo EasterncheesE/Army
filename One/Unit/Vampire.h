@@ -11,7 +11,7 @@ class VampirePhysAttack;
 
 class Vampire : public Unit {
 public:
-        Vampire(std::string title, int hp, int dmg);
+        Vampire(std::string title = "vampire", int hp = int(SetupHP::VAMPIRE), int dmg = int(SetupDMG::VAMPIRE));
         ~Vampire();
         
         void attack(Unit* target);

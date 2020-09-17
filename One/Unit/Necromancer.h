@@ -14,7 +14,7 @@ class NecromancerMagicAttack;
 
 class Necromancer : public Spellcaster {
 public:
-    Necromancer(std::string title, int hp, int dmg, int mp);
+    Necromancer(std::string title = "necromancer", int hp = int(SetupHP::NECROMANCER), int dmg = int(SetupDMG::NECROMANCER), int mp = int(SetupMP::NECROMANCER));
     ~Necromancer();
 
     void removeObservable(Observable* target);

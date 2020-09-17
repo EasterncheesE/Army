@@ -2,31 +2,39 @@
 #define SETUP_H
 
 enum class SetupHP {
-    SOLDIER = 1000,
-    ROGUE = 800,
-    VAMPIRE = 1000,
-    WEREWOLF = 1000,
-    NECROMANCER = 800,
+    BERSERKER = 1250,
+    DEMON = 500,
     HEALER = 700,
-    WIZARD = 800,
-    PRIEST = 800
+    NECROMANCER = 800,
+    PRIEST = 800,
+    ROGUE = 800,
+    SOLDIER = 1000,
+    VAMPIRE = 1000,
+    WARLOCK = 800,
+    WEREWOLF = 1000,
+    WIZARD = 800
 };
 
 enum class SetupDMG {
-    SOLDIER = 100,
-    ROGUE = 150,
-    VAMPIRE = 125,
-    WEREWOLF = 125,
-    NECROMANCER = 50,
+    BERSERKER = 100,
+    DEMON = 50,
     HEALER = 50,
+    NECROMANCER = 50,
+    PRIEST = 50,
+    ROGUE = 150,
+    SOLDIER = 100,
+    VAMPIRE = 125,
+    WARLOCK = 75,
+    WEREWOLF = 125,
     WIZARD = 50,
-    PRIEST = 50
 };
 
 enum class SetupMP {
-    NECROMANCER = 1000,
-    WIZARD = 1000,
-    PRIEST = 500
+    HEALER = 700,
+    NECROMANCER = 700,
+    PRIEST = 500,
+    WARLOCK = 700,
+    WIZARD = 1000
 };
 
 #endif // SETUP_H

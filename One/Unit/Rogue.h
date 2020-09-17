@@ -7,7 +7,7 @@
 
 class Rogue : public Unit {
 public:
-        Rogue(std::string title, int hp, int dmg);
+        Rogue(std::string title = "rogue", int hp = int(SetupHP::ROGUE), int dmg = int(SetupDMG::ROGUE));
         ~Rogue();
         
         void attack(Unit* target);

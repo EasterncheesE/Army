@@ -9,7 +9,7 @@
 
 class Wizard : public Spellcaster {
 public:
-    Wizard(std::string title, int hp, int dmg, int mp);
+    Wizard(std::string title = "wizard", int hp = int(SetupHP::WIZARD), int dmg = int(SetupDMG::WIZARD), int mp = int(SetupMP::WIZARD));
     ~Wizard();
 };
 

@@ -10,7 +10,7 @@ class WerewolfPhysAttack;
 
 class Werewolf : public Unit {
 public:
-    Werewolf(std::string title, int hp, int dmg);
+    Werewolf(std::string title = "werewolf", int hp = int(SetupHP::WEREWOLF), int dmg = int(SetupDMG::WEREWOLF));
     ~Werewolf();
     
     PhysStateRole getPhysRole();

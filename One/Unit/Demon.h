@@ -8,7 +8,7 @@
 
 class Demon : public Soldier {
 public:
-    Demon(std::string title, int hp, int dmg);
+    Demon(std::string title = "demon", int hp = int(SetupHP::DEMON), int dmg = int(SetupDMG::DEMON));
     ~Demon();
 };
  

@@ -6,6 +6,7 @@
 #include "../Interface/Observer.h"
 #include "../Interface/Observable.h"
 #include "../State/Roles.h"
+#include "../Setup.h"
 
 class DefaultPhysState;
 class DefaultPhysAttack;
