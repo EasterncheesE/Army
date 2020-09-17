@@ -52,6 +52,15 @@ void Spellcaster::setMagicRole(MagicStateRole role) {
 
 void Spellcaster::attack(Unit* target) {
     std::cout << "Spellcaster::attack" << std::endl;
+    if ( this->checkIfDead() ) {
+        std::cout << "Unit " << this->getTitle() << " is dead and cannot attack." << std::endl;
+        return;
+    }
+    if ( target->checkIfDead() ) {
+        std::cout << "Unit " << target->getTitle() << " is dead and cannot be attacked." << std::endl;
+        return;
+    }
+    
     this->chooseAction(target);
 }
 void Spellcaster::regularAttack(Unit* target) {

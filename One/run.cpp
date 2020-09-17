@@ -1,14 +1,4 @@
-#include <iostream>
-#include "./Unit/Rogue.h"
-#include "./Unit/Vampire.h"
-#include "./Unit/Soldier.h"
-#include "./Unit/Necromancer.h"
-#include "./Unit/Berserker.h"
-#include "./Unit/Werewolf.h"
-#include "./Unit/Healer.h"
-#include "./Unit/Priest.h"
-#include "./Unit/Warlock.h"
-#include "./Spell/SpellList.h"
+#include "Linker.h"
 
 int main() {
     srand (time(NULL));
@@ -23,6 +13,7 @@ int main() {
     Priest* priest = new Priest("Priest", 1000, 50, 500);
     Warlock* warlock = new Warlock("Warlock", 1000, 50, 500);
     Demon* demon = new Demon("Demon", 500, 50);
+    Wizard* wizard = new Wizard("Wizard", 500, 25, 500);
     
     // std::cout << demon << std::endl;
     // std::cout << warlock << std::endl;
@@ -33,25 +24,14 @@ int main() {
     // warlock->addDemon();
     // warlock->getDemonList();
     
-    for ( ; werewolf->getHP() > 0 && soldier->getHP() > 0; ) {
-        werewolf->attack(soldier);
-        soldier->attack(werewolf);
+    for ( ; werewolf->getHP() > 0 && wizard->getHP() > 0; ) {
+        werewolf->attack(wizard);
+        wizard->attack(werewolf);
     }
     
+    std::cout << werewolf << std::endl;
+    std::cout << wizard << std::endl;
     
-    // fedor->getSpellList();
-    // fedor->attack(vasya);
-    // fedor->castSpell(fedor);
-    
-    // for ( ; frank->getHP() > 0; ) {
-    //     petya->attack(frank);
-    // }
-    // for ( int i = 1; healer->getHP() > 0 && ody->getHP() > 0; i++ ) {
-    //     std::cout << std::endl << "CYCLE NUMBER " << i << std::endl;
-    //     ody->attack(healer);
-    //     std::cout << std::endl;
-    //     healer->attack(ody);
-    // }
     
     
     return 0;

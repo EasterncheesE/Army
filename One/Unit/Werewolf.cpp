@@ -8,10 +8,15 @@ Werewolf::Werewolf(std::string title, int hp, int dmg) : Unit(title, hp, dmg) {
 Werewolf::~Werewolf() {}
 
 void Werewolf::attack(Unit* target) {
+    this->checkIfDead();
+    target->checkIfDead();
+    
     this->_attack->attack(target);
 }
 void Werewolf::counterAttack(Unit* target) {
     std::cout << "Werewolf::counterAttack" << std::endl;
+    this->checkIfDead();
+    target->checkIfDead();
     this->_attack->counterAttack(target);
 }
 

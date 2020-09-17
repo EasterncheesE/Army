@@ -19,7 +19,8 @@ enum MagicStateRole {
     healer,
     necromancer,
     priest,
-    warlock
+    warlock,
+    wizard
 };
 
 std::ostream& operator<<(std::ostream& out, PhysStateRole role);

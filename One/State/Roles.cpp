@@ -48,6 +48,9 @@ std::ostream& operator<<(std::ostream& out, MagicStateRole role) {
         case warlock :
             out << "warlock";
             return out;
+        case wizard :
+            out << "wizard";
+            return out;
     }
     return out;
 }

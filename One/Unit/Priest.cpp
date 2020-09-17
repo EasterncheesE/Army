@@ -4,7 +4,7 @@
 Priest::Priest(std::string title, int hp, int dmg, int mp) : Spellcaster(title, hp, dmg, mp) {
 this->_magicState = new PriestMagicState(this, mp);
 this->_magicAttack = new PriestMagicAttack(this, dmg);
-this->addSpell(new Fireball(100,150));
+this->addSpell(new Fireball(100,75));
 this->addSpell(new Heal(50,100));
 }
 

@@ -6,8 +6,7 @@ Necromancer::Necromancer(std::string title, int hp, int dmg, int mp) : Spellcast
     this->_magicState = new NecromancerMagicState(this, mp);
     this->_magicAttack = new NecromancerMagicAttack(this, dmg);
     this->setIsUndead();
-    this->addSpell(new Fireball(100,150));
-    this->addSpell(new Heal(50, 100));
+    this->addSpell(new Fireball(100,100));
 }
 Necromancer::~Necromancer() {
     delete(this->_state);
